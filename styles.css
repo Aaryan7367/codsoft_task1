@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    font-size: 42px;
+    margin: 10px 0;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-header {
+    background: linear-gradient(to right, #222, #444);
+    padding: 25px 0;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+  
+  .branding {
+    margin-bottom: 10px;
+  }
+  
+  .brand-name {
+    font-family: 'Georgia', serif;
+    font-size: 40px;
+    color: #ffdab9;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .brand-tagline {
+    font-style: italic;
+    font-size: 16px;
+    color: #ddd;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 12px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffdab9;
+  }
+  
+  section {
+    padding: 50px;
+  }
+  
+  #home, #about, #services, #custom-image, #contact {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  #home {
+    background-image: url('360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg');
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  #about {
+    background-image: url('hand-drawn-fashion-shop-pattern-background_23-2150849915.avif');
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #services {
+    background-image: url('wp357124.webp');
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  #custom-image {
+    background-image: url('pexels-dana-tentis-118658-370799.jpg');
+    color: white;
+    padding: 50px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  #contact {
+    background-image: url('1000_F_285868337_UJwkW55vZwHyfzXVEGc54l4mskmXed8y.jpg');
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .text-box {
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 900px;
+  }
+  
+  #home .text-box {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+  }
+  
+  #about .text-box {
+    background-color: rgba(255, 248, 230, 0.85);
+    color: #000;
+  }
+  
+  #services .text-box {
+    background-color: rgba(240, 230, 255, 0.85);
+    color: #000;
+  }
+  
+  #custom-image .text-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+  }
+  
+  #contact .text-box {
+    background-color: rgba(220, 250, 255, 0.85);
+    color: #000;
+  }
+  
+  .cta-button {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #cc3700;
+    transform: scale(1.1);
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    box-shadow: 0 0 8px #ff4500;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
